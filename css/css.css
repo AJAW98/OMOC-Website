@@ -56,6 +56,19 @@ body {
   clear: both; }
 
 /* Front Page	*/
+.sticky {
+  border-bottom: 2px solid black;
+  padding-top: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  .sticky ul {
+    margin-top: 15px; }
+
+.fix-content {
+  margin-top: 0px; }
+
 nav {
   display: flex;
   padding-top: 60px;
@@ -165,9 +178,10 @@ nav {
           float: right;
           display: inline-block; }
           #aboutUs .featuresContainer .leftFeatures .feature .imageDescHolder img {
-            width: 30%;
+            height: 150px;
+            width: 150px;
             border: 2px solid black;
-            border-radius: 150px;
+            border-radius: 50%;
             margin: -2px 0 0 -80px;
             float: left; }
           #aboutUs .featuresContainer .leftFeatures .feature .imageDescHolder p {
@@ -194,12 +208,15 @@ nav {
           float: left;
           display: inline-block; }
           #aboutUs .featuresContainer .rightFeatures .feature .imageDescHolder img {
-            width: 30%;
+            width: 150px;
+            height: 150px;
             border: 2px solid black;
-            border-radius: 150px;
+            border-radius: 50%;
             margin: -2px -80px 0 0;
             float: right; }
           #aboutUs .featuresContainer .rightFeatures .feature .imageDescHolder p {
             float: left;
             width: 400px;
             padding: 50px; }
+
+/*# sourceMappingURL=css.css.map */
