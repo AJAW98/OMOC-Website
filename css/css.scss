@@ -296,3 +296,23 @@ nav {
 		}		
 	}	
 }
+
+/* Prices */
+table {
+	width: 80%;
+	text-align: center;
+	border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+	tr {
+		th {
+			height: 50px;
+			background: $primary-color;
+		}
+
+		td {
+
+		}
+	}
+}
