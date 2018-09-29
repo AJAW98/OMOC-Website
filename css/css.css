@@ -1,0 +1,205 @@
+/* Scss Document */
+@font-face {
+  font-family: 'Bold';
+  /*a name to be used later*/
+  src: url("../font/theboldfont.ttf");
+  /*URL to font*/ }
+@font-face {
+  font-family: 'Black';
+  /*a name to be used later*/
+  src: url("../font/TitilliumWeb-Black.ttf");
+  /*URL to font*/ }
+@font-face {
+  font-family: 'Titi Regular';
+  /*a name to be used later*/
+  src: url("../font/TitilliumWeb-Regular.ttf");
+  /*URL to font*/ }
+@font-face {
+  font-family: 'Titi Semi';
+  /*a name to be used later*/
+  src: url("../font/TitilliumWeb-Bold.ttf");
+  /*URL to font*/ }
+@font-face {
+  font-family: 'Coco Light';
+  /*a name to be used later*/
+  src: url("../font/Cocogoose Pro Ultralight-trial.ttf");
+  /*URL to font*/ }
+@font-face {
+  font-family: 'Coco Pro';
+  /*a name to be used later*/
+  src: url("../font/Cocogoose Pro-trial.ttf");
+  /*URL to font*/ }
+@font-face {
+  font-family: 'Poppins Light';
+  /*a name to be used later*/
+  src: url("../font/Poppins-Light.ttf");
+  /*URL to font*/ }
+@font-face {
+  font-family: 'Poppins Regular';
+  /*a name to be used later*/
+  src: url("../font/Poppins-Regular.ttf");
+  /*URL to font*/ }
+@font-face {
+  font-family: 'Poppins Bold';
+  /*a name to be used later*/
+  src: url("../font/Poppins-Bold.ttf");
+  /*URL to font*/ }
+@font-face {
+  font-family: 'Poppins XBold';
+  /*a name to be used later*/
+  src: url("../font/Poppins-ExtraBold.ttf");
+  /*URL to font*/ }
+body {
+  font-family: Poppins Light; }
+
+.clear {
+  clear: both; }
+
+/* Front Page	*/
+nav {
+  display: flex;
+  padding-top: 60px;
+  list-style: none; }
+  nav .brand-container {
+    margin-left: 80px;
+    text-transform: uppercase; }
+    nav .brand-container .green {
+      color: #157300; }
+    nav .brand-container .nav-logo {
+      font-size: 32px;
+      font-family: Poppins Bold;
+      transform: scaleY(1.3); }
+    nav .brand-container .nav-logo-subtext {
+      margin-top: -26px;
+      letter-spacing: 4.7px;
+      margin-left: 3px;
+      font-family: Poppins Light; }
+  nav ul {
+    margin: auto 100px auto auto; }
+  nav .nav-item {
+    display: inline-block;
+    margin-right: 40px;
+    padding: 0px 10px 0px 10px;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 22px;
+    border-bottom: 2px solid transparent;
+    font-family: Poppins Bold; }
+    nav .nav-item a {
+      text-decoration: none !important;
+      color: #157300 !important; }
+    nav .nav-item :hover {
+      border-bottom: 2px solid #157300; }
+
+#coverImage {
+  background: url(../img/mainImage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%; }
+  #coverImage #overImageContainer {
+    margin: 300px 150px auto auto;
+    border-radius: 5px;
+    width: 1000px;
+    height: 150px;
+    padding: 10px;
+    text-align: right; }
+    #coverImage #overImageContainer p {
+      color: black; }
+    #coverImage #overImageContainer .imageText {
+      font-size: 33px;
+      font-family: Poppins Bold; }
+    #coverImage #overImageContainer .imageSubText {
+      font-family: Poppins Light;
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: -20px; }
+    #coverImage #overImageContainer #imageButtons {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%; }
+    #coverImage #overImageContainer button {
+      background: none;
+      border: 2px solid #157300;
+      margin: 0px 0px 0px 20px;
+      text-transform: lowercase;
+      font-weight: 700;
+      border-radius: 20px;
+      color: #157300;
+      min-width: 150px; }
+    #coverImage #overImageContainer button:hover {
+      background: #157300;
+      color: white;
+      transition: all 0.5s ease; }
+
+/* About Us */
+#aboutUs {
+  height: 1500px;
+  width: 100%; }
+  #aboutUs .featuresHeader {
+    text-align: center;
+    font-family: Poppins Bold;
+    padding: 100px 0;
+    font-size: 34px; }
+  #aboutUs .featuresContainer {
+    height: 1300px;
+    width: 100%;
+    margin: 0 auto; }
+    #aboutUs .featuresContainer .leftFeatures {
+      float: left;
+      width: 50%;
+      height: 100%;
+      border-right: 1px solid black; }
+      #aboutUs .featuresContainer .leftFeatures .feature {
+        margin: 150px 0;
+        padding-bottom: 350px; }
+        #aboutUs .featuresContainer .leftFeatures .feature .featureHeader {
+          font-family: Poppins Regular;
+          text-align: right;
+          padding-right: 30px;
+          font-size: 25px; }
+        #aboutUs .featuresContainer .leftFeatures .feature .imageDescHolder {
+          border-top: 2px solid black;
+          width: 500px;
+          float: right;
+          display: inline-block; }
+          #aboutUs .featuresContainer .leftFeatures .feature .imageDescHolder img {
+            width: 30%;
+            border: 2px solid black;
+            border-radius: 150px;
+            margin: -2px 0 0 -80px;
+            float: left; }
+          #aboutUs .featuresContainer .leftFeatures .feature .imageDescHolder p {
+            float: right;
+            width: 400px;
+            padding: 50px; }
+    #aboutUs .featuresContainer .rightFeatures {
+      float: left;
+      width: 50%;
+      height: 100%;
+      border-left: 1px solid black;
+      padding-top: 300px; }
+      #aboutUs .featuresContainer .rightFeatures .feature {
+        margin: 150px 0;
+        padding-bottom: 350px; }
+        #aboutUs .featuresContainer .rightFeatures .feature .featureHeader {
+          font-family: Poppins Regular;
+          text-align: left;
+          padding-left: 30px;
+          font-size: 25px; }
+        #aboutUs .featuresContainer .rightFeatures .feature .imageDescHolder {
+          border-top: 2px solid black;
+          width: 500px;
+          float: left;
+          display: inline-block; }
+          #aboutUs .featuresContainer .rightFeatures .feature .imageDescHolder img {
+            width: 30%;
+            border: 2px solid black;
+            border-radius: 150px;
+            margin: -2px -80px 0 0;
+            float: right; }
+          #aboutUs .featuresContainer .rightFeatures .feature .imageDescHolder p {
+            float: left;
+            width: 400px;
+            padding: 50px; }
