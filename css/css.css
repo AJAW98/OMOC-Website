@@ -218,9 +218,24 @@ nav {
             width: 400px;
             padding: 50px; }
 
+/* Contact */
+#contact {
+  text-align: center;
+  margin: 150px; }
+  #contact .info {
+    width: 240px;
+    display: inline-block; }
+    #contact .info img {
+      display: inline-block;
+      float: left; }
+      #contact .info img p {
+        float: right; }
+    #contact .info:last-child {
+      width: 340px; }
+
 /* Prices */
 #prices {
-  margin: 200px 0; }
+  margin: 100px 0; }
   #prices .pricesHeader {
     margin: 50px;
     font-size: 34px;
@@ -261,7 +276,53 @@ th:only-child {
 /* Footer */
 #footer {
   width: 100%;
-  height: 100px;
-  background: #157300; }
+  height: 150px;
+  background: #157300;
+  color: white;
+  position: relative; }
+  #footer #footerContact {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; }
+    #footer #footerContact .info {
+      width: 240px;
+      display: inline-block; }
+      #footer #footerContact .info img {
+        display: inline-block;
+        float: left; }
+        #footer #footerContact .info img p {
+          float: right; }
+      #footer #footerContact .info:last-child {
+        width: 340px; }
+
+#footerBottom {
+  width: 100%;
+  height: 60px;
+  background: #0e4f00;
+  color: white;
+  position: relative; }
+  #footerBottom .author {
+    padding-left: 50px; }
+  #footerBottom .copyright {
+    right: 0;
+    padding-right: 50px; }
+
+.vertical-center {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%; }
+
+.horizontal-center {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%; }
+
+.center {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%; }
 
 /*# sourceMappingURL=css.css.map */

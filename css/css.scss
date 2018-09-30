@@ -296,9 +296,36 @@ nav {
 	}	
 }
 
+/* Contact */
+
+#contact {
+	text-align: center;
+	margin: 150px;
+	.info {
+		
+		width: 240px;
+		display: inline-block;
+		img {
+
+			display: inline-block;
+			float: left;
+			
+			p {
+				
+				float: right;	
+				
+			}
+		}
+
+		&:last-child {
+			width: 340px;
+		}
+	}
+}
+
 /* Prices */
 #prices {
-	margin: 200px 0;
+	margin: 100px 0;
 	.pricesHeader {
 		margin: 50px;
 		font-size: 34px;
@@ -360,6 +387,74 @@ th:only-child{
 
 #footer {
 	width: 100%;
-	height: 100px;
+	height: 150px;
 	background: $primary-color;
+	color: white;
+	position: relative;
+	#footerContact {
+		text-align: center;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		.info {
+			
+			width: 240px;
+			display: inline-block;
+			img {
+
+				display: inline-block;
+				float: left;
+				
+				p {
+					
+					float: right;	
+					
+				}
+			}
+
+			&:last-child {
+				width: 340px;
+			}
+		}
+	}
+
+
 }
+#footerBottom {
+		width: 100%;
+		height: 60px;
+		background: #0e4f00;
+		color: white;
+		position: relative;
+
+		.author {
+			padding-left: 50px;
+		}
+
+		.copyright {
+			right: 0;
+			padding-right: 50px;
+		}
+	}
+
+
+.vertical-center {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+}
+
+.horizontal-center {
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+}
+
+.center {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+}
+
