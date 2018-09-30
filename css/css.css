@@ -56,18 +56,17 @@ body {
   clear: both; }
 
 /* Front Page	*/
-.sticky {
-  border-bottom: 2px solid black;
-  padding-top: 20px;
-  background: rgba(0, 0, 0, 0.1);
+#backToTop {
   position: fixed;
-  top: 0;
-  width: 100%; }
-  .sticky ul {
-    margin-top: 15px; }
-
-.fix-content {
-  margin-top: 0px; }
+  bottom: 15px;
+  right: 25px;
+  text-align: center; }
+  #backToTop a {
+    text-decoration: none !important;
+    color: #157300;
+    font-weight: bold; }
+  #backToTop img {
+    transform: rotate(-90deg); }
 
 nav {
   display: flex;
@@ -132,7 +131,7 @@ nav {
       display: flex;
       justify-content: flex-end;
       width: 100%; }
-    #coverImage #overImageContainer button {
+    #coverImage #overImageContainer a {
       background: none;
       border: 2px solid #157300;
       margin: 0px 0px 0px 20px;
@@ -141,7 +140,7 @@ nav {
       border-radius: 20px;
       color: #157300;
       min-width: 150px; }
-    #coverImage #overImageContainer button:hover {
+    #coverImage #overImageContainer a:hover {
       background: #157300;
       color: white;
       transition: all 0.5s ease; }
@@ -248,15 +247,7 @@ nav {
   #prices .double-table {
     width: 80%; }
     #prices .double-table .single-table {
-      width: 95%;
-      			/*&:first-of-type {
-      				border-right: 15px solid transparent;
-      
-      			}
-      
-      			&:last-of-type {
-      				border-left: 15px solid transparent;
-      			}*/ }
+      width: 95%; }
 
 th:first-child {
   border-radius: 6px 0 0 0; }

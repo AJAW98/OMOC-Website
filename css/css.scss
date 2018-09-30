@@ -64,20 +64,19 @@ body {
 
 /* Front Page	*/
 
-.sticky {
-		border-bottom: 2px solid black;
-		padding-top: 20px;
-		background: rgba(0, 0, 0, 0.10);
-		position: fixed;
-		top: 0;
-		width: 100%;
-		ul {
-			margin-top: 15px;
-		}
+#backToTop {
+	a {
+		text-decoration: none !important;
+		color: $primary-color;
+		font-weight: bold;
 	}
-
-.fix-content {
-	margin-top: 0px;
+	position: fixed;
+	bottom: 15px;
+	right: 25px;
+	text-align: center;
+	img {
+		transform: rotate(-90deg);
+	}
 }
 
 nav {
@@ -175,7 +174,7 @@ nav {
 			width: 100%;
 		}
 		
-		button {
+		a {
 			background: none;
 			border: 2px solid $primary-color;
 			margin: 0px 0px 0px 20px;
@@ -187,7 +186,7 @@ nav {
 			
 		}
 		
-		button:hover {
+		a:hover {
 			background: $primary-color;
 			color: white;
 			transition: all 0.5s ease;
@@ -340,15 +339,6 @@ nav {
 		width: 80%;
 		.single-table {
 			width: 95%;
-
-			/*&:first-of-type {
-				border-right: 15px solid transparent;
-
-			}
-
-			&:last-of-type {
-				border-left: 15px solid transparent;
-			}*/
 		}
 	}
 }
